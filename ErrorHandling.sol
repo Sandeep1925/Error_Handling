@@ -3,12 +3,12 @@ pragma solidity ^0.8.0;
 
 contract Example {
     uint public a;
-    uint public year = 2024;
+    uint public year = 2025;
     uint public j;
 
     // Function to set the value of 'a' with a check using 'require'
     function setA(uint _a) public {
-        require(_a < 2024, "The given value of 'a' should be less than 2024 .");  
+        require(_a < 2025, "The given value of 'a' should be less than 2024 .");  
         a = _a;
         j = year - a;  
         votingAge();
